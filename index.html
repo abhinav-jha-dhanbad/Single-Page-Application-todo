@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./radio.css">
+</head>
+
+<body>
+    <!-- The main container of the document -->
+    <div class="container">
+
+        <!-- The top header -->
+        <header class="header">
+            <p class="header-p">To do</p>
+        </header>
+        <!-- The top header neds -->
+
+        <!-- The spinner -->
+        <div class="spinner">
+            <span class="s1"></span>
+            <span class="s2"></span>
+            <span class="s3"></span>
+        </div>
+        <!-- The spinner end -->
+
+        <div class="hero">
+            <!-- The navigation bar -->
+            <nav class="navigation-bar">
+                <ul class="container-todo">
+                    <li class="todos a" id="myDay">
+                        <span></span>
+                        <p>My Day</p>
+                    </li>
+                    <li class="todos a" id="important">
+                        <span></span>
+                        <p>Important</p>
+                    </li>
+                    <li class="todos a" id="planned">
+                        <span></span>
+                        <p>Planned</p>
+                    </li>
+                    <li class="todos a" id="tasks">
+                        <span></span>
+                        <p>Tasks</p>
+                    </li>
+                </ul>
+                <ul class="lists-container">
+                    <li class="lists todos" id="new-lists">
+                        <span></span>
+                        <p>+ New Lists</p>
+                    </li>
+                </ul>
+            </nav>
+            <!-- The navigation bar ends -->
+
+            <!-- The `all purpose` main window -->
+            <div class="main-window">
+                <header class="main-header">
+                    <div class="title-date-collection">
+                        <div class="title">Tasks</div>
+                    </div>
+                </header>
+                <ul class="tasks-view">
+                    <li class="task">
+                        <label class="task-label">
+                            <form action="#" id="todo-form" data-key="tasks">
+                                <input type="text" value="New Task" class="new-todo">
+                            </form>
+                            <input type="radio"  name="radio">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li class="task">
+                        <label class="task-label">One
+                            <input class="input-radio" type="radio"  name="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                    <li class="task">
+                        <label class="task-label">Two
+                            <input class="input-radio" type="radio"  name="">
+                            <span class="checkmark"></span>
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- The `all purpose` main window ends -->
+    </div>
+    <!-- The main container ends -->
+
+    <!-- Javascript -->
+    <script src="./javascript/main.js" type="module"></script>
+</body>
+
+</html>

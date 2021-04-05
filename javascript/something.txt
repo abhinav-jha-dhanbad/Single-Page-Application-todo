@@ -1,0 +1,114 @@
+
+    #first
+    to do        -   [
+        id(Number()), date(Date()), completed(Boolean()), 
+        relatedTodos(Array()), remindMe, dueDate(Date()), 
+        repeat, note(String())
+    ]
+
+    #second
+    to do {
+        text: todoname, 
+        date: date, 
+        id: id, 
+        completed: completed, 
+        relatedTodos: relatedTodos,
+        remindMe: remindMe, 
+        dueDate: dueDate, 
+        repeat: repeat, 
+        note: note
+    }
+
+
+    myDay       -   [
+        {
+        id: Number, 
+        date: Date, 
+        completed: Boolean, 
+        relatedTodos: Array, 
+        remindMe: String,
+        dueDate: Date, 
+        reapeat: String, 
+        note: String
+    }, 
+    {...}
+    ]
+
+    important   -   [to do, ...]
+    
+    planned     -   [to do, ...]
+
+    tasks       -   [to do, ...]
+
+
+
+Remember :-
+localStorage.setItem('one', ["1", "1"])
+undefined
+console.table(localStorage)
+ 
+(index)
+Value
+one	"1,1"
+length	1
+Storage
+length: 1
+one: "1,1"
+__proto__: Storage
+undefined
+"something,something,something".split(",")
+(3) ["something", "something", "something"]
+delete localStorage.one
+true
+console.table(localStorage)
+ 
+(index)
+Value
+length	0
+Storage
+undefined
+localStorage.setItem('one', "something, something, something;another thing")
+undefined
+localStorage.setItem('one', "something, something, something;another thing")
+undefined
+console.table(localStorage)
+ 
+(index)
+Value
+one	"something, something, something;another thing"
+length	1
+Storage
+undefined
+var a = localStorage.one
+undefined
+a.split(";")
+(2) ["something, something, something", "another thing"]
+0: "something, something, something"
+1: "another thing"
+length: 2
+__proto__: Array(0)
+delete localStorage.one
+true
+localStorage.setItem('one', "something, something, something;another thing;")
+undefined
+a.split(";")
+(2) ["something, something, something", "another thing"]
+localStorage.getItem("one")
+"something, something, something;another thing;"
+localStorage.getItem("one").split(";")
+(3) ["something, something, something", "another thing", ""]
+0: "something, something, something"
+1: "another thing"
+2: ""
+length: 3
+__proto__: Array(0)
+if(localStorage.getItem("one").split(";")[-1] == "") { console.log("Empty String") }
+undefined
+if(localStorage.getItem("one").split(";")[-1] == "") { console.log("Empty String") } else { console.log("Note Empty String") }
+ Note Empty String
+undefined
+localStorage.getItem("one").split(";")[(localStorage.getItem("one").split(";").length - 1)] == ""
+true
+if(localStorage.getItem("one").split(";")[(localStorage.getItem("one").split(";").length - 1)] == "") { console.log("Empty String") } else { console.log("Not Empty String") }
+1 Empty String
+undefined
